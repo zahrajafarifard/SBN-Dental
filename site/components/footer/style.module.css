@@ -1,0 +1,15 @@
+.backGround {
+  border-radius: 100px;
+  background: var(
+    --gradient-text,
+    linear-gradient(180deg, #264490 0%, #5cafcd 50%, #264490 100%)
+  );
+}
+
+.backGroundText {
+    background: var(--gradient-text, linear-gradient(180deg, #264490 0%, #5CAFCD 50%, #264490 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* fallback for other browsers */
+}

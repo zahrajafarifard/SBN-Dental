@@ -1,0 +1,14 @@
+.backGround {
+  background: var(
+    --gradient-BG-green,
+    linear-gradient(
+      106deg,
+      #ddf3df -9.05%,
+      #f5fff6 11.82%,
+      #ddf3df 32.69%,
+      #f5fff6 53.56%,
+      #ddf3df 74.43%,
+      #f5fff6 95.3%
+    )
+  );
+}

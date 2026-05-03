@@ -1,0 +1,44 @@
+.backGroundText {
+  background: var(
+    --gradient-text,
+    linear-gradient(180deg, #264490 0%, #5cafcd 50%, #264490 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: Quicksand;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.backGroundTextPersian {
+  background: var(
+    --gradient-text,
+    linear-gradient(180deg, #264490 0%, #5cafcd 50%, #264490 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-align: center;
+
+  /* D large/H3 32 */
+  font-family: IRANSansWeb(FaNum);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px; /* 168.75% */
+}
+
+@media (max-width: 750px) {
+  .backGroundText {
+    font-size: 28px;
+  }
+
+  .backGroundTextPersian {
+    font-size: 28px;
+    text-align: right;
+  }
+}

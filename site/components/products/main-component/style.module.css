@@ -1,0 +1,11 @@
+.backGround {
+  background: linear-gradient(
+    97deg,
+    #cfe8f6 0%,
+    #ebf5fb 20%,
+    #cfe8f6 40%,
+    #ebf5fb 60%,
+    #cfe8f6 79.5%,
+    #ebf5fb 100%
+  );
+}

@@ -1,0 +1,10 @@
+/* .backGround {
+  background: url("../../../public/images/article-header.png") lightgray 50% /
+    cover no-repeat;
+} */
+
+.title {
+  /* border-radius: 32px; */
+  background: var(--white-blur, rgba(255, 255, 255, 0.5));
+  backdrop-filter: blur(10px);
+}

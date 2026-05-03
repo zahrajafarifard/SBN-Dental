@@ -1,0 +1,42 @@
+/* ImageSpinner.css */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.spinner-image {
+  margin: 0 10px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  max-width: 100px;
+  transform: translateY(0);
+}
+
+.spinner-image.active {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+/* When the animation finishes after 5 repetitions */
+.spinner-container.final .spinner-image {
+  opacity: 1;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.spinner-container.final .spinner-image:nth-child(1) {
+  transform: translateX(-400px);
+  opacity: 0;
+}
+
+.spinner-container.final .spinner-image:nth-child(3) {
+  transform: translateX(400px);
+  opacity: 0;
+}
+
+.spinner-container.final .spinner-image:nth-child(2) {
+  opacity: 0;
+  /* transform: translateY(0); */
+}

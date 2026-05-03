@@ -1,0 +1,29 @@
+.backGround {
+  border-radius: 20px;
+  background: var(
+    --gradient-text,
+    linear-gradient(180deg, #264490 0%, #5cafcd 50%, #264490 100%)
+  );
+
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.backGroundText {
+  background: var(
+    --gradient-text,
+    linear-gradient(180deg, #264490 0%, #5cafcd 50%, #264490 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.backGroundLine {
+  background: linear-gradient(
+    97deg,
+    #cfe8f6 0%,
+    #ebf5fb 20%,
+    #cfe8f6 40%,
+    #ebf5fb 60%,
+    #cfe8f6 79.5%,
+    #ebf5fb 100%
+  );
+}

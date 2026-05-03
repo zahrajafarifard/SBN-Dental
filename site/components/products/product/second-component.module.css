@@ -1,0 +1,30 @@
+.backGround {
+  position: relative; /* Establishes a positioning context for the pseudo-element */
+  overflow: hidden; /* Ensures the pseudo-element doesn't overflow */
+  
+}
+
+.backGround::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    106deg,
+    #ddf3df -9.05%,
+    #f5fff6 11.82%,
+    #ddf3df 32.69%,
+    #f5fff6 53.56%,
+    #ddf3df 74.43%,
+    #f5fff6 95.3%
+  );
+  opacity: 0.25; /* This will only affect the background, not the child elements */
+  z-index: 1; /* Ensure the pseudo-element is behind the content */
+}
+
+.backGround > * {
+  position: relative;
+  z-index: 2; /* Ensure child content is above the pseudo-element */
+}
