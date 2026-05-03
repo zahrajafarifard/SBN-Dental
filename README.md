@@ -57,3 +57,7 @@ Create the required `.env` files from the provided `.env.example` files before r
 - The existing upload assets are included so the project snapshot remains visually complete.
 - Local `.env` files are ignored to keep environment-specific values out of version control.
 - Database tables are synchronized through Sequelize when the API starts.
+
+## Author
+
+Developed by Zahra Jafarifard.

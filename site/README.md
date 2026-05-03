@@ -44,3 +44,7 @@ The site expects the API URL in `NEXT_PUBLIC_API_URL`.
 ```bash
 NEXT_PUBLIC_API_URL=http://localhost:4000
 ```
+
+## Author
+
+Developed by Zahra Jafarifard.

@@ -44,3 +44,7 @@ The dashboard expects the API URL in `REACT_APP_URL`.
 ```bash
 REACT_APP_URL=http://localhost:4000
 ```
+
+## Author
+
+Developed by Zahra Jafarifard.

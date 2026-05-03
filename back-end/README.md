@@ -62,3 +62,7 @@ DB_PORT=3306
 | `/api` | Admin product, article, category, social, and message management |
 | `/users` | Login and password reset |
 | `/uploads` | Static uploaded assets |
+
+## Author
+
+Developed by Zahra Jafarifard.
