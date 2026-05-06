@@ -58,12 +58,6 @@ A Docker Compose setup is included for running the full stack from the repositor
 docker compose up --build
 ```
 
-If your environment uses the standalone Docker Compose binary, use:
-
-```bash
-docker-compose up --build
-```
-
 This starts:
 
 - `backend` on `http://localhost:4000`
