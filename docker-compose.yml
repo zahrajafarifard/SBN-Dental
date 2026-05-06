@@ -1,0 +1,54 @@
+services:
+  backend:
+    build: ./back-end
+    container_name: backend
+    ports:
+      - "4000:4000"
+    depends_on:
+      - mysql
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - DB_NAME=sbn-db
+      - INTERNAL_API_URL=http://backend:4000
+
+  frontend:
+    build:
+      context: ./site
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:4000
+        INTERNAL_API_URL: http://backend:4000
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:4000
+      - INTERNAL_API_URL=http://backend:4000
+
+  admin:
+    build:
+      context: ./admin
+      args:
+        REACT_APP_URL: http://localhost:4000
+    container_name: admin
+    ports:
+      - "3001:80"
+
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sbn-db
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

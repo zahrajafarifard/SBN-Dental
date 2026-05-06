@@ -7,18 +7,19 @@ const User = db.define("User", {
     autoIncrement: true,
     unique: true,
     primaryKey: true,
-    require: true,
+    allowNull: false,
   },
   mobile: {
     type: DataTypes.STRING,
-    require: true,
+    allowNull: false,
   },
   password: {
     type: DataTypes.STRING,
-    require: true,
+    allowNull: false,
   },
   securityCode: {
     type: DataTypes.STRING,
+    allowNull: true,
   },
 });
 module.exports = User;

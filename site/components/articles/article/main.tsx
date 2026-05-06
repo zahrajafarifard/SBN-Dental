@@ -51,7 +51,7 @@ const Main: React.FC<ArticleProps> = ({ body }) => {
             <Image
               src={
                 body?.sectionTwoImage
-                  ? `${process.env.NEXT_PUBLIC_API_URL}/uploads/${body?.sectionTwoImage}`
+                  ? `http://backend:4000/uploads/${body?.sectionTwoImage}`
                   : Article1
               }
               width={500}
@@ -101,7 +101,7 @@ const Main: React.FC<ArticleProps> = ({ body }) => {
             <Image
               src={
                 body?.sectionFourImage
-                  ? `${process.env.NEXT_PUBLIC_API_URL}/uploads/${body?.sectionFourImage}`
+                  ? `http://backend:4000/uploads/${body?.sectionFourImage}`
                   : Article1
               }
               width={500}
@@ -140,7 +140,7 @@ const Main: React.FC<ArticleProps> = ({ body }) => {
           <Image
             src={
               body?.sectionFiveImage
-                ? `${process.env.NEXT_PUBLIC_API_URL}/uploads/${body?.sectionFiveImage}`
+                ? `http://backend:4000/uploads/${body?.sectionFiveImage}`
                 : Article1
             }
             fill

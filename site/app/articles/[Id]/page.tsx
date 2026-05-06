@@ -40,13 +40,14 @@ interface ArticleBody {
 
 async function fetchArticleData(Id: number) {
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/sbn/article/${Id}`,
+    // `${process.env.NEXT_PUBLIC_API_URL}/sbn/article/${Id}`,
+    `http://backend:4000/sbn/article/${Id}`,
     {
       headers: {
         "Content-Type": "application/json",
       },
       cache: "no-store", // prevents caching if you need fresh data each time
-    }
+    },
   );
 
   if (!response.ok) {

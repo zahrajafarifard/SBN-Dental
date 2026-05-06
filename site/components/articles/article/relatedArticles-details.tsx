@@ -29,7 +29,8 @@ const ArticleDetails: React.FC<ArticleDetailsProps> = ({ article }) => {
           <Image
             src={
               article?.mainImage
-                ? `${process.env.NEXT_PUBLIC_API_URL}/uploads/${article?.mainImage}`
+                ? // ? `${process.env.NEXT_PUBLIC_API_URL}/uploads/${article?.mainImage}`
+                  `http://backend:4000/uploads/${article?.mainImage}`
                 : Img
             }
             width={500}

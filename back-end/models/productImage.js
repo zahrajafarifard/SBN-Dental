@@ -28,37 +28,4 @@ const ProductImage = sequelize.define("ProductImage", {
 
 module.exports = ProductImage;
 
-////////////////////////
 
-// const { DataTypes } = require('sequelize');
-// const sequelize = require('../db');
-// const Product = require('./Product'); // Adjust this path to the Product model
-
-// const ProductImage = sequelize.define('ProductImage', {
-//   id: {
-//     type: DataTypes.INTEGER,
-//     autoIncrement: true,
-//     primaryKey: true,
-//   },
-//   imageUrl: {
-//     type: DataTypes.STRING,
-//     allowNull: false,
-//   },
-//   productId: {
-//     type: DataTypes.INTEGER,
-//     allowNull: false,
-//     references: {
-//       model: Product,
-//       key: 'id',
-//     },
-//   },
-// }, {
-//   tableName: 'product_images',
-//   timestamps: true,
-// });
-
-// // Define the relationship between Product and ProductImage
-// Product.hasMany(ProductImage, { foreignKey: 'productId', as: 'images' });
-// ProductImage.belongsTo(Product, { foreignKey: 'productId', as: 'product' });
-
-// module.exports = ProductImage;

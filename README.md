@@ -44,6 +44,33 @@ npm start
 
 Create the required `.env` files from the provided `.env.example` files before running the apps.
 
+## Docker Compose
+
+A Docker Compose setup is included for running the full stack together from the repo root.
+
+```bash
+cd e:\SAMPLEWORK-TELMIS\SBN\SBN
+docker compose up --build
+```
+
+If your environment uses the standalone Docker Compose binary, use:
+
+```bash
+docker-compose up --build
+```
+
+This starts:
+- `backend` on `http://localhost:4000`
+- `frontend` on `http://localhost:3000`
+- `admin` on `http://localhost:3001`
+- `mysql` on `http://localhost:3307`
+
+To stop and remove the containers and network:
+
+```bash
+docker compose down
+```
+
 ## Default Ports
 
 | Service | URL |

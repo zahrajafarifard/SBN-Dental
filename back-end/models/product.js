@@ -23,22 +23,6 @@ const Product = sequelize.define("Product", {
     type: DataTypes.TEXT,
     allowNull: true,
   },
-  // productComposition: {
-  //   type: DataTypes.TEXT,
-  //   allowNull: true,
-  // },
-  // productDetailsTitle: {
-  //   type: DataTypes.STRING,
-  //   allowNull: true,
-  // },
-  // productDetailsDescription: {
-  //   type: DataTypes.TEXT,
-  //   allowNull: true,
-  // },
-  // usageInstructions: {
-  //   type: DataTypes.TEXT,
-  //   allowNull: true,
-  // },
   keyWord1: {
     type: DataTypes.STRING,
     allowNull: true,

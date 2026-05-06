@@ -27,7 +27,7 @@ const Newest = () => {
           headers: {
             "Content-Type": "application/json",
           },
-        }
+        },
       );
 
       const _data = await _response.json();
@@ -63,7 +63,8 @@ const Newest = () => {
               <Image
                 src={
                   latestArticles[0]?.mainImage
-                    ? `${process.env.NEXT_PUBLIC_API_URL}/uploads/${latestArticles[0]?.mainImage}`
+                    ? // ? `${process.env.NEXT_PUBLIC_API_URL}/uploads/${latestArticles[0]?.mainImage}`
+                      `http://backend:4000/uploads/${latestArticles[0]?.mainImage}`
                     : Article1
                 }
                 alt="Right Image"
@@ -105,7 +106,7 @@ const Newest = () => {
                 <Image
                   src={
                     latestArticles[1]?.mainImage
-                      ? `${process.env.NEXT_PUBLIC_API_URL}/uploads/${latestArticles[1]?.mainImage}`
+                      ? `http://backend:4000/uploads/${latestArticles[1]?.mainImage}`
                       : Article1
                   }
                   alt="Left Image 1"
@@ -142,7 +143,7 @@ const Newest = () => {
                 <Image
                   src={
                     latestArticles[2]?.mainImage
-                      ? `${process.env.NEXT_PUBLIC_API_URL}/uploads/${latestArticles[2]?.mainImage}`
+                      ? `http://backend:4000/uploads/${latestArticles[2]?.mainImage}`
                       : Article1
                   }
                   alt="Left Image 2"

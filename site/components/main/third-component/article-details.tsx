@@ -20,7 +20,8 @@ const ArticleDetails: React.FC<ArticleDetailsProps> = ({ article }) => {
     <div className="rounded-[20px] shadow-[-1px_1px_6px_0_rgba(0,0,0,0.15)] ">
       <div>
         <Image
-          src={`${process.env.NEXT_PUBLIC_API_URL}/uploads/${article?.mainImage}`}
+          // src={`${process.env.NEXT_PUBLIC_API_URL}/uploads/${article?.mainImage}`}
+          src={`http://backend:4000/uploads/${article?.mainImage}`}
           width={500}
           height={200}
           className="rounded-t-[20px] "
